@@ -1,5 +1,5 @@
 {% set name = "icclim" %}
-{% set version = "6.5.0" %}
+{% set version = "7.0.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
-  sha256: 7172a28b2ba316ac4b67e7bb8424102612f9ea76de54e45306399d37c5a28bc9 
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
+  sha256: ea045af863e6a7723fbbd8f1ec4d9c751b8fae7aaab180fe07fc3013999b43d3
 
 build:
   number: 0
