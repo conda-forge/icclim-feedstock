@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
   sha256: 0cf1b6a8bf3a11604922eb0bf9ff69b1fc821bb10cc87e9a6edb1b81971069c6
 
 build:
@@ -16,7 +16,7 @@ build:
 
 requirements:
   host:
-    - python >=3.10
+    - python {{ python_min }}
     - pip
     - flit-core
   run:
@@ -40,6 +40,7 @@ requirements:
 test:
   requires:
     - pip
+    - python {{ python_min }}
   imports:
     - icclim
     - icclim.models
