@@ -36,14 +36,15 @@ requirements:
     - zarr >=2.11.0
     - dateparser >=1.1.0
     - fsspec
-
+    
 test:
   requires:
     - pip
     - python {{ python_min }}
   imports:
     - icclim
-    - icclim.models
+    - icclim.ecad
+    - icclim.generic
   commands:
     - pip check
 
