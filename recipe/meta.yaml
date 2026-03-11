@@ -1,6 +1,5 @@
 {% set name = "icclim" %}
-{% set version = "6.5.0" %}
-
+{% set version = "7.0.5" %}
 
 package:
   name: {{ name|lower }}
@@ -8,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
-  sha256: 7172a28b2ba316ac4b67e7bb8424102612f9ea76de54e45306399d37c5a28bc9 
+  sha256: 0cf1b6a8bf3a11604922eb0bf9ff69b1fc821bb10cc87e9a6edb1b81971069c6
 
 build:
   number: 0
@@ -17,25 +16,26 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.10
     - pip
-    - setuptools
+    - flit-core
   run:
-    - python >=3.8
-    - cftime
-    - dask
-    - netCDF4
-    - numpy
-    - xarray
-    - xclim >=0.45
-    - rechunker >=0.3, !=0.4
-    - pandas >=1.3
-    - dateparser
-    - psutil
+    - python >=3.10
+    - cf-xarray >=0.7.4
+    - cftime >=1.5.0
+    - dask-core >=2022.2.0
+    - jinja2 >=3.0
+    - netcdf4 >=1.5.7
+    - numcodecs >=0.10.0
+    - numpy >=1.21
+    - pandas >=1.3.0
+    - pint >=0.20
+    - typing-extensions >=4.0
+    - xarray >=2022.6.0
+    - xclim >=0.45.0
+    - zarr >=2.11.0
+    - dateparser >=1.1.0
     - fsspec
-    - zarr
-    - pint
-    - jinja2
 
 test:
   requires:
