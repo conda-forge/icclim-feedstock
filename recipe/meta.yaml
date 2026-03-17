@@ -1,5 +1,6 @@
 {% set name = "icclim" %}
 {% set version = "7.1.0" %}
+{% set python_min = "3.10" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +21,7 @@ requirements:
     - pip
     - flit-core
   run:
-    - python >=3.10
+    - python >={{ python_min }}
     - cf-xarray >=0.7.4
     - cftime >=1.5.0
     - dask-core >=2022.2.0
