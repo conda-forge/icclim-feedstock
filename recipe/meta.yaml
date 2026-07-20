@@ -1,5 +1,5 @@
 {% set name = "icclim" %}
-{% set version = "7.1.1" %}
+{% set version = "7.1.2" %}
 {% set python_min = "3.10" %}
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/icclim-{{ version }}.tar.gz
-  sha256: 52e5c708e5198eae5f7b19dc15dff068c8bfa8cb4ab2d06ab98cc24b8beea2b3
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 5e87869c12b264f4f2d7ef1345ee25819f0cd8f6551dae8491a659d47d117bb3
 
 build:
   number: 0
@@ -37,7 +37,7 @@ requirements:
     - zarr >=2.11.0
     - dateparser >=1.1.0
     - fsspec
-    
+
 test:
   requires:
     - pip
