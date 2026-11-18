@@ -196,6 +196,5 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@bzah](https://github.com/bzah/)
 * [@pagecp](https://github.com/pagecp/)
 
