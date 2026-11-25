@@ -1,5 +1,5 @@
 {% set name = "icclim" %}
-{% set version = "7.5.0" %}
+{% set version = "7.5.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 146dd66c2c8470a34b248fca449b2aaff49033df5ed2612952ebb8e1e8177436
+  sha256: 43a15c3e02366cb84b0ba4a846824f4f13fb9cf88e346b60793d6c348071ed48
 
 build:
   number: 0
